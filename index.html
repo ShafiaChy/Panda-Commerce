@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panda Commerce</title>
+    <!-- CSS link for Tailwind Carousel -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" />
+
+    <!-- JS link to access Tailwind utility classes -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<header>
+    <!-- Responsive Navbar Starts -->
+    <nav>
+       <div class="md:max-w-6xl  mx-auto bg-slate-50 py-3">
+            <div class="flex justify-between w-full">
+                <div class="flex items-center">
+                    <!-- logo goes here -->
+                    <div class="px-4">
+                        <img  src="./Images/logo.png" alt="">
+                    </div>
+                    <!-- menu goes here -->
+                    <!-- The menu will be hidden for small devices but for medium and large devices it will be visible -->
+                    <div class="hidden space-x-5 md:flex">
+                    
+                        <a class="text-lg " href="#home">Home</a>
+                        <a class="text-slate-400 text-lg hover:text-black" href="#shoes">Shoes</a>
+                        <a class="text-slate-400 text-lg hover:text-black" href="#">Backpack</a>
+                    
+                    </div>
+                </div>
+                <!-- The button will be hidden for small devices but for medium and large devices it will be visible -->
+                <div class="hidden md:flex mr-7">
+                    <button class="bg-rose-400 rounded text-white px-3 py-2 hover:bg-rose-500">Sign up</button>
+                </div>
+            </div>
+            
+            <!-- mobile menu -->
+            <!-- For devices of medium and large sizes the mobile menu will be hidden and for the small devices the mobile menu will be visible -->
+            <div class="md:hidden">
+                <a class="block text-lg pt-2 px-3" href="#">Home</a>
+                <a class="block text-lg text-slate-400 hover:text-black pt-2 px-3" href="#">Shoes</a>
+                <a class="block text-lg text-slate-400  hover:text-black pt-2 px-3" href="#">Backpack</a>
+                <button class="px-3 py-2 mt-2 mx-3 bg-rose-400 hover:bg-rose-500 text-white rounded">Sign up</button>
+            </div>
+       </div>
+    </nav>
+    <!-- Responsive Navbar Ends -->
+</header>
+
+<body>
+   <!--Section 1: Carousel Starts-->
+    <section class="conatainer mx-auto px-5 xl:px-48 mt-24">
+        <div id="carouselExampleSlidesOnly" class="carousel slide relative" data-bs-ride="carousel">
+            <div class="carousel-inner relative w-full overflow-hidden rounded-lg">
+              <!-- Slider 1 -->
+              <div class="carousel-item active relative float-left w-full bg-rose-100">
+               <div class="md:flex justify-between">
+                <div  class="my-auto mx-auto px-10">
+                    
+                        <h1 class="text-3xl font-semibold mb-2 mt-7">Mega LCD TV for Sports</h1>
+                        <p class="text-lg mb-4">This is the best tv in the world for people who just want to waste time in front of tv</p>
+                        <h1 class="text-3xl text-rose-500 mb-2 font-bold">$1200</h1>
+                        <button class="py-3 px-4 mb-3 bg-rose-500 text-white rounded-lg ">BUY NOW</button>
+                
+                  </div>
+                <img
+                  src="./Images/tv.png"
+                  class="flex md:w-5/12 block w-full"
+                  alt="TV"
+                />
+               </div>   
+              </div>
+              <!-- Slider 2 -->
+              <div class="carousel-item relative float-left w-full bg-rose-100">
+                <div class="md:flex justify-between">
+                    <div  class="my-auto mx-auto px-10">
+                       
+                            <h1 class="text-3xl font-semibold mb-2 mt-7">Cool Dude Headphone</h1>
+                            <p class="text-lg mb-4">This is the best headphone in the world for people who just want to waste time in front of funky world.</p>
+                            <h1 class="text-3xl text-rose-500 mb-2 font-bold">$420</h1>
+                            <button class="py-3 px-4 mb-3 bg-rose-500 text-white rounded-lg">BUY NOW</button>
+                  
+                      </div>
+                    <img
+                      src="./Images/headphone.png"
+                      class="flex md:w-5/12 block w-full"
+                      alt="Headphone"
+                    />
+                   </div>
+                </div>
+                <!-- Slider 3 -->
+              <div class="carousel-item relative float-left w-full bg-rose-100">
+                <div class="md:flex justify-between">
+                    <div  class="my-auto mx-auto px-10">
+                   
+                            <h1 class="text-3xl font-semibold mb-2 mt-7">X-box for your living room</h1>
+                            <p class="text-lg mb-4">This is the best x-box in the world for people who just want to waste time in front of fake sports.</p>
+                            <h1 class="text-3xl text-rose-500 mb-2 font-bold">$600</h1>
+                            <button class="py-3 px-4 mb-3 bg-rose-500 text-white rounded-lg">BUY NOW</button>
+                   
+                      </div>
+                    <img
+                      src="./Images/xbox.png"
+                      class="flex md:w-5/12 block w-full"
+                      alt="X-box"
+                    />
+                   </div>
+                    
+                </div>
+              </div>
+            </div>
+          </div>
+    </section>
+    <!--Section 1: Carousel Ends-->
+
+    <!--Section 2: Cards Starts -->
+    <section class="container mx-auto px-9 xl:px-48 py-24">
+      <h1 id="shoes" class="text-3xl mb-2">Shoes</h1>
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- Card 1 -->
+        <div class="container mx-auto px-5 pb-4 space-y-3 shadow-2xl rounded-lg">
+          <img src="./Images/shoe-1.png" alt="shoe 1">
+          <h1 class="text-2xl font-medium">Supply 350</h1>
+          <p>This is a longer card with supporting text below as a natural lead-in to additional.</p>
+          <h1 class="text-2xl font-medium">$120</h1>
+          <button class="bg-rose-500 py-2 px-5 rounded-lg text-white">Buy Now >></button>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="container mx-auto px-5 pb-4 space-y-3 shadow-2xl rounded-lg">
+          <img src="./Images/shoe-2.png" alt="shoe 2">
+          <h1 class="text-2xl font-medium">Nike 360</h1>
+          <p>This card has supporting text below as a natural lead-in to additional content.</p>
+          <h1 class="text-2xl font-medium">$320</h1>
+          <button class="bg-rose-500 py-2 px-5 rounded-lg text-white">Buy Now >></button>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="container mx-auto px-2 pb-4 space-y-3 shadow-2xl rounded-lg">
+          <img src="./Images/shoe-3.png" alt="shoe 3">
+          <h1 class="text-2xl font-medium">Red Airmax</h1>
+          <p>This is a wider card with supporting text below as a natural lead-in to additional.</p>
+          <h1 class="text-2xl font-medium">$350</h1>
+          <button class="bg-rose-500 py-2 px-5 rounded-lg text-white ">Buy Now >></button>
+        </div>
+      </div>
+    </section>
+    <!-- Section 2: Cards Ends -->
+
+    <!-- JS link for Tailwind Carousel -->
+   <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
+</body>
+</html>
